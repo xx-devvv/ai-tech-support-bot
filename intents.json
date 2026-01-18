@@ -1,0 +1,134 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Is anyone there?"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Greetings! I am your AI assistant."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I am done", "Exit"],
+      "responses": ["Goodbye! Have a great day.", "See you soon!", "Sad to see you go. Bye!"]
+    },
+    {
+      "tag": "about",
+      "patterns": ["What are you?", "Who are you?", "What is this bot?", "What do you do?"],
+      "responses": ["I am an AI-powered Technical Support Chatbot. I can help you diagnose computer issues like crashes, internet lag, and audio problems."]
+    },
+    {
+      "tag": "creator",
+      "patterns": ["Who made you?", "Who created you?", "Who is your developer?", "Who built this?"],
+      "responses": ["I was developed by **Dev Pandey**. \n\nI am built using **Python** and **Natural Language Processing (NLP)** techniques, specifically:\n- **TF-IDF** for text analysis\n- **Logistic Regression** for classification\n- **NLTK** for preprocessing\n- **Streamlit** for this interface."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That helps", "Thanks a lot"],
+      "responses": ["You are welcome!", "Happy to help!", "Anytime."]
+    },
+    {
+      "tag": "support_contact",
+      "patterns": ["I need human help", "talk to a person", "customer support", "agent"],
+      "responses": ["You can contact our support team at support@example.com or call 1-800-123-4567."]
+    },
+    {
+      "tag": "slow_pc",
+      "patterns": ["PC is slow", "apps take long to open", "high disk usage", "computer lagging", "very slow performance"],
+      "responses": ["**Potential Issue:** HDD bottleneck / Too many startup apps.\n\n**Fix:**\n1. Disable startup apps (Task Manager > Startup).\n2. Free up space (keep 15-20% free).\n3. Run Disk Cleanup.\n4. Consider upgrading to SSD."]
+    },
+    {
+      "tag": "pc_freeze_crash",
+      "patterns": ["PC freezes randomly", "blue screen of death", "computer restarts on its own", "BSOD", "system crashing"],
+      "responses": ["**Potential Issue:** RAM instability / Driver crash / Overheating.\n\n**Fix:**\n1. Update GPU and chipset drivers.\n2. Run Windows Memory Diagnostic.\n3. Check temperatures.\n4. Remove overclocking."]
+    },
+    {
+      "tag": "wifi_no_internet",
+      "patterns": ["WiFi connected but no internet", "websites not loading", "connected but no access", "yellow triangle on wifi"],
+      "responses": ["**Potential Issue:** DNS / Router network issue.\n\n**Fix:**\n1. Restart Router & PC.\n2. Open CMD as Admin and run:\n   `ipconfig /flushdns`\n   `ipconfig /release`\n   `ipconfig /renew`\n3. Change DNS to 8.8.8.8."]
+    },
+    {
+      "tag": "internet_slow",
+      "patterns": ["Internet is slow", "high ping in games", "buffering videos", "laggy connection", "slow download"],
+      "responses": ["**Potential Issue:** Network congestion / Background usage.\n\n**Fix:**\n1. Use an Ethernet cable if possible.\n2. Stop background downloads/updates.\n3. Restart Router.\n4. Check Task Manager for network hogs."]
+    },
+    {
+      "tag": "laptop_overheat",
+      "patterns": ["Laptop heats a lot", "fan is very loud", "performance drops when hot", "thermal throttling", "laptop burning hot"],
+      "responses": ["**Potential Issue:** Thermal throttling / Dust buildup.\n\n**Fix:**\n1. Clean vents and fans.\n2. Use a cooling pad.\n3. Set Power Mode to Balanced.\n4. Replace thermal paste if the device is old."]
+    },
+    {
+      "tag": "battery_drain",
+      "patterns": ["Battery drains fast", "laptop gets warm when idle", "battery dying quickly", "short battery life"],
+      "responses": ["**Potential Issue:** Background processes / Battery wear.\n\n**Fix:**\n1. Reduce brightness.\n2. Enable Battery Saver mode.\n3. Check Battery Health settings.\n4. Close unused background apps."]
+    },
+    {
+      "tag": "no_display",
+      "patterns": ["PC turns on but no display", "keyboard lights on but black screen", "no video output", "monitor says no signal"],
+      "responses": ["**Potential Issue:** Display output / RAM seating.\n\n**Fix:**\n1. Try a different HDMI/DP cable.\n2. Reseat RAM sticks (remove and click back in).\n3. Reset BIOS (CMOS battery).\n4. Try booting with 1 RAM stick."]
+    },
+    {
+      "tag": "screen_issues",
+      "patterns": ["Screen flickering", "lines on screen", "random black screen", "display glitching", "artifacts on screen"],
+      "responses": ["**Potential Issue:** GPU driver / Cable issue / Failing GPU.\n\n**Fix:**\n1. Change HDMI/DP cable.\n2. Clean install GPU drivers.\n3. Check refresh rate settings.\n4. Test with another monitor to confirm."]
+    },
+    {
+      "tag": "random_shutdown",
+      "patterns": ["PC restarts while gaming", "sudden shutdown", "computer turns off by itself", "power cut during games"],
+      "responses": ["**Potential Issue:** PSU problem / Overheating.\n\n**Fix:**\n1. Check CPU/GPU temps while gaming.\n2. Clean dust from PC.\n3. Ensure PSU wattage is sufficient for your hardware."]
+    },
+    {
+      "tag": "usb_issues",
+      "patterns": ["USB devices disconnect", "mouse lag", "keyboard disconnects", "usb dropout", "peripherals stop working"],
+      "responses": ["**Potential Issue:** USB power management.\n\n**Fix:**\n1. Disable USB selective suspend in Power Options.\n2. Try different USB ports (use back panel for PC).\n3. Update Chipset drivers."]
+    },
+    {
+      "tag": "storage_full",
+      "patterns": ["Storage full", "PC slow cant install apps", "no disk space", "drive red bar", "cleanup disk"],
+      "responses": ["**Potential Issue:** Low disk space / Cache bloat.\n\n**Fix:**\n1. Press Win+R, type `%temp%` and delete files.\n2. Uninstall unused apps.\n3. Use 'Storage Sense' in Windows Settings."]
+    },
+    {
+      "tag": "boot_loop",
+      "patterns": ["PC wont boot", "stuck on preparing automatic repair", "windows boot loop", "spinning circle boot"],
+      "responses": ["**Potential Issue:** Corrupted Windows boot files.\n\n**Fix:**\n1. Boot into Recovery > Startup Repair.\n2. Open CMD in recovery and run: `sfc /scannow` and `chkdsk /f`.\n3. Last resort: Reset Windows (Keep Files)."]
+    },
+    {
+      "tag": "app_crash",
+      "patterns": ["Apps crash instantly", "dll missing error", "program closes immediately", "software crash"],
+      "responses": ["**Potential Issue:** Corrupted runtime dependencies.\n\n**Fix:**\n1. Reinstall Microsoft Visual C++ Redistributables.\n2. Reinstall .NET Runtime.\n3. Reinstall the specific program."]
+    },
+    {
+      "tag": "update_fail",
+      "patterns": ["Windows updates failing", "update stuck at percentage", "cant update windows", "update error"],
+      "responses": ["**Potential Issue:** Update service corruption.\n\n**Fix:**\n1. Restart PC.\n2. Run Windows Update Troubleshooter.\n3. Free up disk space.\n4. Reset update components via CMD."]
+    },
+    {
+      "tag": "no_sound",
+      "patterns": ["No sound", "speaker icon shows output but no audio", "audio not working", "cant hear anything"],
+      "responses": ["**Potential Issue:** Wrong audio output / Driver.\n\n**Fix:**\n1. Check Sound Settings > Output Device.\n2. Troubleshoot Sound settings.\n3. Reinstall Realtek Audio drivers."]
+    },
+    {
+      "tag": "mic_issue",
+      "patterns": ["Mic not working", "discord cant hear me", "zoom microphone issue", "input not detected"],
+      "responses": ["**Potential Issue:** Privacy permission / Wrong input.\n\n**Fix:**\n1. Settings > Privacy > Microphone > Allow Access.\n2. Check input device inside the app settings.\n3. Update audio drivers."]
+    },
+    {
+      "tag": "keyboard_glitch",
+      "patterns": ["Keyboard typing wrong letters", "random shortcuts triggered", "keyboard going crazy", "sticky keys"],
+      "responses": ["**Potential Issue:** Sticky keys / Wrong layout.\n\n**Fix:**\n1. Turn off 'Sticky Keys' in Accessibility settings.\n2. Check Keyboard Layout (Language settings).\n3. Test with an external keyboard."]
+    },
+    {
+      "tag": "virus_malware",
+      "patterns": ["Files disappearing", "access denied error", "weird popups", "virus alert", "ransomware"],
+      "responses": ["**Potential Issue:** Malware / Ransomware risk.\n\n**Fix:**\n1. Disconnect Internet IMMEDIATELY.\n2. Run Windows Defender Full Scan.\n3. Use Malwarebytes.\n4. Backup important files if possible."]
+    },
+    {
+      "tag": "browser_hijack",
+      "patterns": ["Browser redirects", "too many ads", "homepage changed", "search engine changed", "chrome virus"],
+      "responses": ["**Potential Issue:** Browser hijacker / Bad extensions.\n\n**Fix:**\n1. Remove unknown extensions.\n2. Reset Browser Settings to default.\n3. Clear Cache and Cookies.\n4. Run an antivirus scan."]
+    },
+    {
+      "tag": "game_lag",
+      "patterns": ["PC is fast but games stutter", "fps drops", "input lag in games", "low fps high end pc"],
+      "responses": ["**Potential Issue:** Background apps / Wrong GPU usage.\n\n**Fix:**\n1. Disable overlays (Discord, Xbox, GeForce).\n2. Update GPU Drivers.\n3. Set game to 'High Performance' in Graphics Settings.\n4. Check temperatures."]
+    }
+  ]
+}
