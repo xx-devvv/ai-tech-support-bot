@@ -115,12 +115,10 @@ Try asking the bot:
 
 ---
 
+
 ## 👨‍💻 Author
-
 **Dev Pandey**
-
-* **Role:** Developer & NLP Engineer
-* **Project Type:** Internship Project (SPARKIIT / Wipro DICE ID)
+* **Role:** Software Engineer
 
 ---
 
